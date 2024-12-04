@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stayl/all.min.css">
+    <link rel="stylesheet" href="stayl/bootstrap.min.css">
+    <link rel="stylesheet" href="stayl/stayl.css">
+</head>
+
+<body class="bg-warning-subtle ">
+    <div class="container h  d-flex justify-content-center align-items-center">
+        <p class="h3 fa-2xl"> Bookmarker </p>
+    </div>
+    <div class="container h-1 d-flex justify-content-center">
+        <i class="fa-solid fa-7 p-1 pt-4 fa-bookmark" style="color: #1b5040;"></i>
+        <p class="h3 pt-3"> Bookmark your favorite sites </p>
+        <i class="fa-solid fa-7 p-1 pt-4 fa-bookmark" style="color: #1b5040;"></i>
+
+    </div>
+    <div class="container h-2">
+        <div class="form-group  container w-75">
+            <label for="sitename" class="p-2">
+                <i class="fa-solid fa-book"></i>Site Name
+            </label>
+            <br>
+            <input type="text" oninput="validation(this)" class="w-100 mb-4 rounded-2 form-control" id="sitename"
+                placeholder="Bookmark Name" />
+        </div>
+        <div class="form-group container w-75">
+            <label for="siteurl" class="p-2">
+                <i class="fa-solid fa-link"></i> Site URL
+            </label>
+            <br>
+            <input type="text" oninput="validation(this)" class="w-100 mb-4 rounded-2  form-control" id="siteurl"
+                placeholder="Website URL" />
+        </div>
+        <div class="container mb-5 w-75 d-flex justify-content-center">
+            <button onclick="add()" type="button" id="sup" class="w-25 btn btn-success">Supmet</button>
+        </div>
+    </div>
+    <div class="container h-3 pt-5">
+        <div class="item container rounded-2 mb-2 bg-light">
+            <div class="row text-center">
+                <div class="col-3">
+                    <p>index</p>
+                </div>
+                <div class="col-3">
+                    <p>Website Name</p>
+                </div>
+                <div class="col-3">
+                    <p>Vist</p>
+                </div>
+                <div class="col-3">
+                    <p>delete</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ww" class="h-3 container">
+    </div>
+    <div id="alert" class="layer d-flex justify-content-center align-items-center d-none">
+        <div class="alert shadow-lg alert-danger">
+            <i class="fa-solid fa-close fa-2x" id="close"></i>
+            <p class="h4 text-center p-5 pt-0">تحذير</p>
+            <p>اكتب صح بقى ي غبى الاسم او اللينك فيهم حاجه غلط</p>
+            <p class="h4 text-center fa-2xl">تعبتنى</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
